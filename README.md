@@ -6,6 +6,7 @@
 
 - 爱情吸引模式测试：`?test=love-attraction`
 - 赚钱天赋测试：`?test=money-talent`
+- 财富人格测试：`?test=wealth-mindset`
 
 ## GitHub Pages 链接
 
@@ -14,6 +15,7 @@
 ```text
 https://gophp509.github.io/mini-psych-tests/?test=love-attraction
 https://gophp509.github.io/mini-psych-tests/?test=money-talent
+https://gophp509.github.io/mini-psych-tests/?test=wealth-mindset
 ```
 
 ## 新增测试
@@ -24,4 +26,4 @@ https://gophp509.github.io/mini-psych-tests/?test=money-talent
 
 评分逻辑：统计用户选择最多的选项 key，并展示对应结果。第二名和第一名差距小于等于 `secondaryThreshold` 时，会显示副倾向。
 
-Last deployment trigger: 2026-07-23
+Last deployment trigger: 2026-07-24
