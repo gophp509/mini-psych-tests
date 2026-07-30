@@ -157,7 +157,12 @@ app.addEventListener("click", async (event) => {
   if (button.dataset.action === "copy") {
     const result = score();
     const profile = state.config.results.find((item) => item.key === result.primary);
-    await navigator.clipboard.writeText(`我测出了：${profile.name}\n${profile.subtitle}`);
+    const shareUrl = new URL(location.href);
+    shareUrl.search = "";
+    shareUrl.searchParams.set("test", testId);
+    await navigator.clipboard.writeText(
+      `我测出了：${profile.name}\n${profile.subtitle}\n\n来测测 TA 现在对你什么心思：\n${shareUrl.href}\n\n仅供娱乐与关系自省，不能证明 TA 的真实想法。`,
+    );
     button.textContent = "已复制";
   }
 });
